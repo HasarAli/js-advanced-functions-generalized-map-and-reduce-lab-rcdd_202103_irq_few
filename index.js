@@ -30,6 +30,7 @@ function reduce(arr, operation, startingPoint=0) {
       startingPoint = operation(startingPoint, arr[i])
     }
   }
+  return startingPoint;
 }
 
 
