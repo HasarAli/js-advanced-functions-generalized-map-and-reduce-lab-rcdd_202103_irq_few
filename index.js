@@ -19,7 +19,7 @@ function map(arr, operation = function(x) {return x}) {
 }
 
 
-function reduce(arr, startingPoint, operation = function(x) {return x}) {
+function reduce(arr, operation, startingPoint = 0) {
   for (let element of arr) {
     startingPoint = operation(startingPoint, element)
   }
