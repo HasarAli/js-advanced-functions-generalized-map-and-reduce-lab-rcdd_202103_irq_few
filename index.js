@@ -1,9 +1,9 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
 function map(arr, operation) {
-  arrNew = []
+  r = []
   for (let element of arr) {
-    arrNew.push(operation(element))
+    r.push(operation(element))
   }
   return arrNew
 }
