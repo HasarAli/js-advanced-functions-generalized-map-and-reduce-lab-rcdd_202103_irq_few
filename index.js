@@ -19,11 +19,17 @@ function map(arr, operation = function(x) {return x}) {
 }
 
 
-function reduce(arr, operation, startingPoint = 0) {
-  for (let element of arr) {
-    startingPoint = operation(startingPoint, element)
+function reduce(arr, operation, startingPoint) {
+  if (startingPoint) {
+    for (let element of arr) {
+      startingPoint = operation(startingPoint, element)
+    }
+  } else {
+    startingPoint = arr[0];
+    for(let i = 1; i < arr.length; i++) {
+      startingPoint = operation(startingPoint, arr[i])
+    }
   }
-  return startingPoint
 }
 
 
