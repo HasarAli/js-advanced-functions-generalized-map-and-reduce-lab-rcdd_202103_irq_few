@@ -1,22 +1,22 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
-function map(arr, operation) {
-  newArr = []
-  for (let element of arr) {
-    newArr.push(operation(element))
-  }
-  return newArr
-}
+// function map(arr, operation) {
+//   newArr = []
+//   for (let element of arr) {
+//     newArr.push(operation(element))
+//   }
+//   return newArr
+// }
 
-console.log(map([1, 2, 3, -9], function(a){ return -1 * a }))
+// console.log(map([1, 2, 3, -9], function(a){ return -1 * a }))
 // BUT THIS PASSES!!
 
-// function map(arr, operation = function(x) {return x}) {
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i] = operation(arr[i])
-//   }
-//   return arr
-// }
+function map(arr, operation = function(x) {return x}) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = operation(arr[i])
+  }
+  return arr
+}
 
 
 function reduce(arr, startingPoint, operation = function(x) {return x}) {
