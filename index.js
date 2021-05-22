@@ -1,11 +1,11 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
 function map(arr, operation) {
-  r = []
+  newArr = []
   for (let element of arr) {
-    r.push(operation(element))
+    newArr.push(operation(element))
   }
-  return r
+  return newArr
 }
 
 console.log(map([1, 2, 3, -9], function(a){ return -1 * a }))
