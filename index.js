@@ -1,6 +1,6 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
-function mapLike(arr, operation) {
+function map(arr, operation) {
   arrNew = []
   for (let element of arr) {
     arrNew.push(operation(element))
