@@ -1,9 +1,9 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
-function mapLike(arr, operation = function(x) {return x}) {
+function map(arr, operation) {
   arrNew = []
-  for (let i = 0; i < arr.length; i++) {
-    arrNew[i] = operation(arr[i])
+  for (let element of arr) {
+    arrNew.push(operation(element))
   }
   return arrNew
 }
