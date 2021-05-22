@@ -5,7 +5,7 @@ function map(arr, operation) {
   for (let element of arr) {
     r.push(operation(element))
   }
-  return arrNew
+  return r
 }
 
 console.log(mapToNegativize([1,2,3,4]))
