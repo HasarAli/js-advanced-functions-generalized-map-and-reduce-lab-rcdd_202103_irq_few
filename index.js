@@ -1,6 +1,6 @@
 // Add your functions here
 // WHY DOES THIS NOT PASS THE TESTS????!!!!
-function map(arr, operation) {
+function mapLike(arr, operation) {
   arrNew = []
   for (let element of arr) {
     arrNew.push(operation(element))
@@ -37,7 +37,7 @@ function reduce(arr, startingPoint, operation = function(x) {return x}) {
 // BUT THIS PASSES!!
 
 function mapToNegativize(sourceArray) {
-  return map(sourceArray, function(x){return x * -1})
+  return mapLike(sourceArray, function(x){return x * -1})
 }
 
 // function mapToNoChange(sourceArray) {
