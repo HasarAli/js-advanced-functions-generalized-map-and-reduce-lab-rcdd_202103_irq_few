@@ -7,6 +7,8 @@ function map(arr, operation) {
   }
   return arrNew
 }
+
+console.log(mapToNegativize([1,2,3,4]))
 // BUT THIS PASSES!!
 
 // function map(arr, operation = function(x) {return x}) {
