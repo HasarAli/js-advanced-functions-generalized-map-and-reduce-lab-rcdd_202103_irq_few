@@ -37,7 +37,7 @@ function reduce(arr, startingPoint, operation = function(x) {return x}) {
 // BUT THIS PASSES!!
 
 function mapToNegativize(sourceArray) {
-  return mapLike(sourceArray, function(x){return x * -1})
+  return map(sourceArray, function(x){return x * -1})
 }
 
 // function mapToNoChange(sourceArray) {
