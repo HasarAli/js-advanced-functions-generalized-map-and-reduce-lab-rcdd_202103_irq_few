@@ -8,7 +8,7 @@ function map(arr, operation) {
   return r
 }
 
-console.log(mapToNegativize([1,2,3,4]))
+console.log(map([1, 2, 3, -9], function(a){ return -1 * a }))
 // BUT THIS PASSES!!
 
 // function map(arr, operation = function(x) {return x}) {
